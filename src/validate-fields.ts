@@ -1,8 +1,8 @@
-import fs = require("fs");
+import { readFileSync } from "fs";
 
-const developmentServers = JSON.parse(fs.readFileSync("../data/development-servers.json").toString());
+const developmentServers = JSON.parse(readFileSync("./data/development-servers.json").toString());
 
-const publicServers = JSON.parse(fs.readFileSync("../data/public-servers.json").toString());
+const publicServers = JSON.parse(readFileSync("./data/public-servers.json").toString());
 
 function validateServer(server) {
   // check if everyting is present
