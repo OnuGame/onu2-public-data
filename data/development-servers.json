@@ -3,7 +3,7 @@
     "name": "localhost",
     "version": "0.1.0",
     "server": "ws://localhost:3000",
-    "client": "http://localhost:3000",
+    "client": "http://localhost:5173",
     "description": "Localhost",
     "maintainer": {
       "name": "Developer",
