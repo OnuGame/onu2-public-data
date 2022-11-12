@@ -1,9 +1,5 @@
 import { readFileSync } from "fs";
 
-const developmentServers = JSON.parse(readFileSync("./data/development-servers.json").toString());
-
-const publicServers = JSON.parse(readFileSync("./data/public-servers.json").toString());
-
 function validateServer(server) {
   // check if everyting is present
   if (!server.name) throw new Error("'name' field is missing");
@@ -46,13 +42,25 @@ function validateServer(server) {
     throw new Error("'maintainer.repository' must be a valid http url");
 }
 
-function validateServers(servers) {
-  for (const server of servers) {
-    validateServer(server);
+function readServers(file: string) {
+  const servers = JSON.parse(readFileSync("./data/development-servers.json").toString());
+  return servers;
+}
+
+function validateServers() {
+  try {
+    const servers = [...readServers("./data/development-servers.json"), ...readServers("./data/public-servers.json")];
+
+    for (const server of servers) {
+      validateServer(server);
+    }
+  } catch (e) {
+    console.log("❌ Test failed:", e.message);
+    process.exit(1);
   }
 }
 
-validateServers(developmentServers);
-validateServers(publicServers);
+validateServers();
 
-console.log("All servers are valid");
+console.log("✅ All servers are valid");
+process.exit(0);
