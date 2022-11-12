@@ -1,18 +1,34 @@
 [
-    {
-        "name": "localhost",
-        "version": "0.1.0",
-        "server": "ws://localhost:3000",
-        "client": "http://localhost:3000",
-        "description": "Localhost",
-        "maintainer": {
-            "name": "Developer",
-            "contact": "developer@example.com",
-            "repository": "https://github.com/OnuGame/onu2-server"
-        },
-        "region": {
-            "continent": "World",
-            "country": "Any"
-        }
+  {
+    "name": "localhost",
+    "version": "0.1.0",
+    "server": "ws://localhost:3000",
+    "client": "http://localhost:3000",
+    "description": "Localhost",
+    "maintainer": {
+      "name": "Developer",
+      "contact": "developer@example.com",
+      "repository": "https://github.com/OnuGame/onu2-server"
+    },
+    "region": {
+      "continent": "World",
+      "country": "Any"
     }
+  },
+  {
+    "name": "invalid",
+    "version": "0.1.0",
+    "server": "http://localhost:3000",
+    "client": "http://localhost:3000",
+    "description": "Invalid server for testing",
+    "maintainer": {
+      "name": "Developer",
+      "contact": "developer@example.com",
+      "repository": "https://github.com/OnuGame/onu2-server"
+    },
+    "region": {
+      "continent": "World",
+      "country": "Any"
+    }
+  }
 ]
