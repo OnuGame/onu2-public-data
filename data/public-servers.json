@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "Onu Official",
+    "version": "1.0.0",
+    "server": "wss://onu2.lebogo.tk",
+    "client": "https://onu2.lebogo.tk/",
+    "description": "The official Onu server",
+    "maintainer": {
+      "name": "LeBogo",
+      "contact": "lebogomc [at] gmail [dot] com",
+      "repository": "https://github.com/OnuGame/onu2-server"
+    },
+    "region": {
+      "continent": "Europe",
+      "country": "Germany"
+    }
+  }
+]
