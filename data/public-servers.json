@@ -1,7 +1,7 @@
 [
   {
     "name": "Onu Official",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "server": "wss://onu.lebogo.tk",
     "client": "https://onu.lebogo.tk/",
     "description": "The official Onu server",
