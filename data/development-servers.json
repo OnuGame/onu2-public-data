@@ -18,7 +18,7 @@
   {
     "name": "Onu Official (DEV Client)",
     "version": "1.0.0",
-    "server": "wss://onu.lebogo.tk",
+    "server": "wss://onu.lebogo.me",
     "client": "http://localhost:5173",
     "description": "The official Onu server",
     "maintainer": {
